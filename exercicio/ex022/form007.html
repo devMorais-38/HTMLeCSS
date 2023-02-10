@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exemplo de site </h1>
+
+    <form action="form001.html" method="post">
+        <p>
+            <label for="iprof">profissao</label>
+            <input type="text" id="iprof" list="lprof">
+            <datalist id="lprof">
+                <option value="mad">Medico</option>
+                <option value="eng">engenheiro</option>
+                <option value="adm">adminstraçao</option>
+                <option value="prof">professor</option>
+            </datalist>
+        </p>
+        
+        <p>
+        <label for="iest">estados</label>
+        <select name="estados" id="iest">
+            <optgroup label="regiao sudeste">
+                <option >SP</option>
+                <option >RJ</option>
+                <option> MG</option>
+            </optgroup>
+            <optgroup label="regiao sul">
+                <option >RS</option>
+                <option >PR</option>
+                <option >FL</option>
+            </optgroup>
+        </select>
+        </p>
+        
+      
+        <p>
+            <label for="imsg">comentario</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+          <p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="apagar">
+        </p>
+    </form>
+</body>
+</html>
